@@ -1,0 +1,56 @@
+
+INDEX.HTML
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSUF Database Portal</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>CSUF Database Portal</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Departments</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="main">
+            <h2>Welcome to the CSUF Student and Faculty Database</h2>
+            <p>This portal stores and provides information about students and faculty members at California State University, Fullerton.</p>
+        </div>
+        <aside class="sidebar">
+            <h3>Quick Links</h3>
+            <p>Find additional resources and links here.</p>
+        </aside>
+    </div>
+
+    <form action="databases.php" method="POST">
+        <h2>Professor Information</h2>
+        <p>Enter the social security number of a professor:</p>
+        <input type="text" name="prof_ssn" />
+        <p>Enter a course number:</p>
+        <input type="text" name="course_num" />
+        <p>Enter a section number:</p>
+        <input type="text" name="section_num" />
+
+        <h2>Student Information</h2>
+        <p>Enter a course number to list sections:</p>
+        <input type="text" name="student_course_num" />
+        <p>Enter a student's campus-wide ID:</p>
+        <input type="text" name="student_cwid" />
+
+        <input type="submit" value="Submit" />
+    </form>
+
+    <footer>
+        <p>&copy; 2023 California State University, Fullerton</p>
+    </footer>
+</body>
+</html>
